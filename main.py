@@ -101,3 +101,13 @@ class Ui_MainWindow(object):
         self.p_sub.setText(_translate("MainWindow", "-"))
         self.label.setText(_translate("MainWindow", "result"))
         self.p_add.setText(_translate("MainWindow", "+"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
